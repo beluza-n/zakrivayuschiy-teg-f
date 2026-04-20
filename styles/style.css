@@ -125,6 +125,22 @@
   padding: 8px 35px;
 }
 
+.card__save-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  /* inline-size: fit-content; */
+  /* max-inline-size: 100%; */
+  margin-inline: auto;
+  padding: 15px 20px;
+}
+
+/* .floppy-icon {
+  flex-shrink: 0;
+} */
+
 .card__icon-button {
   padding: 0;
   border: none;
