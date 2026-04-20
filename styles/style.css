@@ -76,3 +76,31 @@
 .card__description p:not(:last-of-type){
   margin-bottom: 25px;
 }
+
+.like_buttons {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 7px;
+  margin: 25px;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  padding: 8px 35px;
+}
+
+.card__icon-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
