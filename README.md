@@ -1,0 +1,1 @@
+git@github.com:beluza-n/zakrivayuschiy-teg-f.git

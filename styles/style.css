@@ -13,10 +13,66 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: var(--main-font-family);
   font-variation-settings: "wght" var(--main-font-weight);
+  /* font-size: var(--main-font-size); */
   background-image: var(--page-background-gradient);
   background-attachment: fixed;
   background-size: cover;
-  
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 11px;
+  width: var(--content-width);
+  background-color: var(--content-bg-color);
+  border: var(--content-border);
+  height: clamp(327px, 38vw, 368px);
+  text-align: center;;
+  font-family: var(--accent-font-family);
+  margin: 100px 0;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: clamp(49px, 2.71rem + 1.50vw, 65px);
+  white-space: nowrap;
+}
+
+.header__subtitle {
+  font-size: clamp(14px, 0.68rem + 0.85vw, 23px);
+}
+
+.card {
+  width: var(--content-width);
+  background-color: var(--content-bg-color);
+  border: var(--content-border);
+}
+
+.card__title {
+  font-size: 18px;
+  font-variation-settings: "wght" var(--title-font-weight);
+  margin: 4px 10px;
+}
+
+.card__image {
+  display: block;
+  /* border-top: var(--content-border);
+  border-bottom: var(--content-border); */
+}
+
+.card__description{
+  margin: 25px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__description p:not(:last-of-type){
+  margin-bottom: 25px;
 }
