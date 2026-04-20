@@ -53,6 +53,7 @@
   width: var(--content-width);
   background-color: var(--content-bg-color);
   border: var(--content-border);
+  margin-bottom: 52px;
 }
 
 .card__title {
