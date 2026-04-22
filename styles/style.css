@@ -190,9 +190,58 @@
   justify-content: center;
 }
 
+/* ДИАЛОГОВОЕ ОКНО */
+dialog:not([open]) {
+  display: none;
+}
+
+.dialog__insert-floppy {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border-width: var(--content-border);
+  max-inline-size: 353px;
+  min-inline-size: 341px;
+  padding: 30px 40px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+    "icon title"
+    "button button";
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.dialog__floppy-icon {
+  inline-size: 39px;
+  block-size: 39px;
+  grid-area: icon;
+}
+
+.dialog__insert-floppy_title {
+  grid-area: title;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 150%;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.dialog__insert-floppy_ok-button {
+  grid-area: button;
+}
+
+.dialog__insert-floppy::backdrop {
+  background-color: rgb(0 0 0 / 0.7);
+} 
+
 @media (width <= 375px) {
   .card__save-button {
     flex-direction: column;
     margin-block-end: 100px;
   }
 }
+
+

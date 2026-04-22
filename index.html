@@ -16,6 +16,21 @@
 
   </head>
   <body class="page">
+
+    <dialog id="dialog-id" class="dialog__insert-floppy">
+      <svg class="floppy-icon dialog__floppy-icon" aria-hidden="true">
+        <use href="./images/floppy.svg#floppy"></use>
+      </svg>
+      <span class="dialog__insert-floppy_title">Вставьте дискету, чтобы продолжить</span>
+      <button
+        class="button dialog__insert-floppy_ok-button"
+        onclick="window['dialog-id'].close()"
+        >
+          <span class="button__text">OK</span>
+      </button>
+    </dialog>
+
+
     <header class="header">
       <h1 class="header__title">
         &lt;/HTML&gt;
@@ -312,7 +327,12 @@
       </section>
 
       <!-- Сохранить на память -->
-      <button class="button card__save-button" type="button">
+      <button
+        class="button card__save-button"
+        type="button"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id"
+        >
         <svg class="floppy-icon" width="21" height="21" aria-hidden="true">
           <use href="./images/floppy.svg#floppy"></use>
         </svg>
