@@ -1,39 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font-family: "Inter-Variable", sans-serif;
-    --accent-font-family: "PressStart2P", sans-serif;
-    --main-font-weight: 410;
-    --main-font-size: 18px;
-    --title-font-weight: 715;
-    --font-color: #000;
-    --label-stroke-color: rgb(255 255 255 / 0.5);
-    --page-background-gradient:
-      repeating-linear-gradient(
-        to right,
-        #d3d3d3 0 2px,
-        transparent 2px 4px
-      ),
-      repeating-linear-gradient(
-        to bottom,
-        #d3d3d3 0 2px,
-        transparent 2px 4px
-      ),
-      linear-gradient(
-        to bottom,
-        #e7e7e7 0%,
-        #e7e7e7 0.01%,
-        #1a1a1a 100%
-      );
+  --main-font-family: "Inter-Variable", sans-serif;
+  --accent-font-family: "PressStart2P", sans-serif;
+  --main-font-weight: 410;
+  --main-font-size: 18px;
+  --title-font-weight: 715;
+  --font-color: #000;
+  --label-stroke-color: rgb(255 255 255 / 0.5);
+  --page-background-gradient:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
-    --content-width: clamp(375px, 70vw, 700px);
-    --content-bg-color: #fff;
-    --content-border: 2px solid #000;
-    --button-text-color: #fff;
-    --button-fill-color: #000;
-    --heart-contour-color: #000;
-    --heart-hover-color: #000;
-    --heart-like-color: #ff0000;
-    --heart-sparks-color: var(--heart-like-color);
-    
-  }
+  --content-width: clamp(375px, 70vw, 700px);
+  --content-bg-color: #fff;
+  --content-border: 2px solid #000;
+  --button-text-color: #fff;
+  --button-fill-color: #000;
+  --heart-contour-color: #000;
+  --heart-hover-color: #000;
+  --heart-like-color: #ff0000;
+  --heart-sparks-color: var(--heart-like-color);
+}
