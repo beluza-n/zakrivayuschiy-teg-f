@@ -29,4 +29,6 @@
     --content-width: clamp(375px, 70vw, 700px);
     --content-bg-color: #fff;
     --content-border: 2px solid #000;
+    --button-text-color: #fff;
+    --button-fill-color: #000;
   }

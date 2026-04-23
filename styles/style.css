@@ -158,6 +158,43 @@
   font-family: var(--accent-font-family);
   font-size: 14px;
   padding: 8px 35px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--button-fill-color);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+
+.floppy-icon {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 #000;
 }
 
 .card__save-button {
