@@ -33,7 +33,7 @@
     --button-fill-color: #000;
     --heart-contour-color: #000;
     --heart-hover-color: #000;
-    --heart-active-color: #ff0000;
-    --heart-sparks-color: #ff0000;
+    --heart-like-color: #ff0000;
+    --heart-sparks-color: var(--heart-like-color);
     
   }
