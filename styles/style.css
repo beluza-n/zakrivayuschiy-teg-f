@@ -241,6 +241,29 @@
   border-color: #000;
 }
 
+.like-icon {
+  width: 39px;
+  height: 36px;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
 /* ДИАЛОГОВОЕ ОКНО */
 dialog:not([open]) {
   display: none;
