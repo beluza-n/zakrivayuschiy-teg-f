@@ -216,7 +216,6 @@
 /* КНОПКА-СЕРДЕЧКО */
 .card__icon-button {
   padding: 0;
-  border: none;
   background: transparent;
   appearance: none;
   -webkit-appearance: none;
