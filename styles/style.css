@@ -42,7 +42,6 @@
 
 .header__title {
   font-size: clamp(49px, 2.71rem + 1.5vw, 65px);
-  white-space: nowrap;
 }
 
 .header__subtitle {
@@ -65,38 +64,40 @@
 .card__image {
   display: block;
   inline-size: 100%;
-  block-size: auto;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.card__image_zero-sprint {
+.card__image_no-filters {
   filter: none;
 }
 
-.card__image_first-sprint-start {
+.card__image_hue-very-low-saturation {
   filter: hue-rotate(35deg) saturate(0.3) contrast(0.7);
 }
 
-.card__image_first-sprint-end {
+.card__image_very-high-contrast {
   filter: contrast(1.5) brightness(1.5);
 }
 
-.card__image_second-sprint-start {
+.card__image_hue-low-saturation {
   filter: hue-rotate(40deg) saturate(0.8) contrast(0.9);
 }
 
-.card__image_second-sprint-end {
+.card__image_inverted {
   filter: invert(1) brightness(1) contrast(0.5);
 }
 
-.card__image_third-sprint-start {
+.card__image_sepia {
   filter: sepia(0.75);
 }
 
-.card__image_third-sprint-end {
+.card__image_very-blurry {
   filter: blur(10px);
 }
 
-.card__image_fourth-sprint {
+.card__image_hue-blurry {
   filter: blur(1px) hue-rotate(60deg) contrast(0.6) brightness(1.1);
 }
 
@@ -209,7 +210,7 @@
   /* inline-size: fit-content; */
   /* max-inline-size: 100%; */
   margin-inline: auto;
-  margin-block-end: 200px;
+  margin-block-end: 100px;
   padding: 15px 20px;
 }
 
@@ -257,6 +258,11 @@
 .main-body {
   fill: transparent;
   transition: fill 0.3s linear;
+}
+
+.heart {
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .like-icon:hover .core {
@@ -311,7 +317,7 @@ dialog:not([open]) {
   position: fixed;
   inset: 0;
   margin: auto;
-  border-width: var(--content-border);
+  border: var(--content-border);
   max-inline-size: 353px;
   min-inline-size: 341px;
   padding: 30px 40px;
@@ -352,6 +358,5 @@ dialog:not([open]) {
 @media (width <= 375px) {
   .card__save-button {
     flex-direction: column;
-    margin-block-end: 100px;
   }
 }
