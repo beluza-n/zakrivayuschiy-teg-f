@@ -337,7 +337,7 @@ dialog:not([open]) {
   grid-area: icon;
 }
 
-.dialog__insert-floppy_title {
+.dialog__insert-floppy_text {
   grid-area: title;
   font-family: var(--accent-font-family);
   font-size: 14px;
