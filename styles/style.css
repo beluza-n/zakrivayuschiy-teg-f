@@ -107,6 +107,11 @@
   overflow: hidden;
   border-block-start: var(--content-border);
   border-block-end: var(--content-border);
+  block-size: clamp(
+    371px,
+    calc(371px + (100vw - 375px) * 325 / 1065),
+    696px
+  );
 }
 
 .card__image-wrap::after {
