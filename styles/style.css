@@ -189,6 +189,8 @@
 .floppy-icon {
   position: relative;
   z-index: 1;
+  inline-size: 21px;
+  block-size: 21px;
   color: var(--button-text-color);
   mix-blend-mode: difference;
 }
@@ -206,7 +208,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  column-gap: 8px;
+  gap: 8px;
   /* inline-size: fit-content; */
   /* max-inline-size: 100%; */
   margin-inline: auto;
@@ -318,8 +320,7 @@ dialog:not([open]) {
   inset: 0;
   margin: auto;
   border: var(--content-border);
-  max-inline-size: 353px;
-  min-inline-size: 341px;
+  inline-size: 353px;
   padding: 30px 30px;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -362,5 +363,16 @@ dialog:not([open]) {
 @media (width <= 375px) {
   .card__save-button {
     flex-direction: column;
+    padding: 14px 18px;
+  }
+
+  .dialog__insert-floppy {
+    padding: 30px 40px;
+    inline-size: 341px;
+  }
+
+  .floppy-icon {
+    inline-size: 28px;
+    block-size: 28px;
   }
 }
