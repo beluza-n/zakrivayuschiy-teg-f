@@ -291,18 +291,19 @@
 
     </main>
 
-    <dialog id="dialog-id" class="dialog__insert-floppy">
+    <dialog id="dialog-id" class="dialog__insert-floppy" open>
       <svg class="floppy-icon dialog__floppy-icon" aria-hidden="true">
         <use href="./images/floppy.svg#floppy"></use>
       </svg>
       <p class="dialog__insert-floppy_text">Вставьте дискету, чтобы продолжить</p>
-      <button
-        class="button dialog__insert-floppy_ok-button"
-        type="button"
-        onclick="window['dialog-id'].close()"
-        >
-          <span class="button__text">OK</span>
-      </button>
+      <form method="dialog" class="dialog__insert-floppy_form">
+        <button
+          class="button dialog__insert-floppy_ok-button"
+          type="submit"
+          >
+            <span class="button__text">OK</span>
+        </button>
+      </form>
     </dialog>
 
     <script src="./scripts/like.js"></script>

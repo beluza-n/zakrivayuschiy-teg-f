@@ -320,7 +320,7 @@ dialog:not([open]) {
   border: var(--content-border);
   max-inline-size: 353px;
   min-inline-size: 341px;
-  padding: 30px 40px;
+  padding: 30px 30px;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-areas:
@@ -348,6 +348,10 @@ dialog:not([open]) {
 }
 
 .dialog__insert-floppy_ok-button {
+  inline-size: 100%;
+}
+
+.dialog__insert-floppy_form {
   grid-area: button;
 }
 
